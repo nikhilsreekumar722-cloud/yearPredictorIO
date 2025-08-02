@@ -26,5 +26,19 @@
     }
   });
 </script>
+  <div id="hiddenTrigger" class="glitchy-text">🕳️ Tap here for a hidden message</div>
+
+<audio id="bg-audio" src="./assets/hidden-message.mp3"></audio>
+
+<script>
+  const trigger = document.getElementById('hiddenTrigger');
+  const audio = document.getElementById('bg-audio');
+
+  trigger.addEventListener('click', () => {
+    audio.play().catch(() => {});
+    trigger.style.display = 'none'; // hide after tap
+  });
+</script>
+
 </body>
 </html>
