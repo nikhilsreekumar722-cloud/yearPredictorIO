@@ -31,9 +31,8 @@ A Matrix-themed satirical web app that "predicts" the next year when you input t
    - `matrix-bg.gif`  
    - `ss.jpg`  
    - `hidden-message.mp3` ← (your Morpheus–Neo audio)  
-3. Open `index.html` in your browser  
-4. Click anywhere on screen to enable hidden audio  
-5. Enter a year, receive the cursed prediction
+3. Open `index.html` in your browser   
+4. Enter a year, receive the cursed prediction
 
 ---
 ## 🕵️‍♂️ Hidden Transmission
