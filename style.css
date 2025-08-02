@@ -1,65 +1,67 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
   font-family: 'Courier New', monospace;
-  color: #00ff00;
-  background: black;
   overflow: hidden;
+  color: #00ff9f;
+  background-color: black;
 }
 
-body {
-  background-image: url('assets/matrix.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.matrix-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url('./assets/matrix-bg.gif') center center / cover no-repeat;
+  opacity: 0.2;
+  filter: brightness(0.8) contrast(1.2);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container {
+  position: relative;
+  top: 20vh;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  border: 2px solid #00ff9f;
+  border-radius: 10px;
   text-align: center;
-  padding: 20px;
+  box-shadow: 0 0 20px #00ff9f88;
 }
 
-.title {
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: #00ff00;
-  text-shadow: 0 0 10px #00ff00;
+.glitch {
+  font-size: 2rem;
+  text-shadow: 0 0 5px #00ff9f, 0 0 10px #00ff9f;
 }
 
-#summonBtn {
-  padding: 15px 30px;
-  font-size: 1.2rem;
+.sub {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #00ffaa;
+}
+
+input, button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  font-size: 1rem;
+  border-radius: 5px;
   border: none;
-  background-color: #000;
-  color: #00ff00;
-  border: 2px solid #00ff00;
+}
+
+button {
+  background-color: #00ff9f;
+  color: black;
+  font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-#summonBtn:hover {
-  background-color: #00ff00;
-  color: #000;
-}
-
-#quoteDisplay {
-  margin-top: 25px;
-  font-size: 1.1rem;
-  max-width: 600px;
-  text-shadow: 0 0 5px #00ff00;
+#prediction {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ff9f;
 }
