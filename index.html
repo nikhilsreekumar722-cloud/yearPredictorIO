@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Yearlyzer: The Pointless Year Predictor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>yearPredictorIO</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive;
-      background-color: #1e1e1e;
-      color: #00ffcc;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+      background: url("https://media.tenor.com/7Wwgdjfv1iEAAAAC/cosmos-space.gif") no-repeat center center fixed;
+      background-size: cover;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color: #ffffff;
+      text-align: center;
+      margin-top: 10%;
     }
-    input, button {
-      padding: 10px;
-      margin: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.2em;
+    .container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 20px;
+      display: inline-block;
+      animation: wiggle 2s infinite ease-in-out;
     }
     input {
-      width: 200px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
     }
     button {
-      background-color: #00ffcc;
-      color: #000;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
       cursor: pointer;
     }
     #result {
-      font-size: 2em;
       margin-top: 20px;
+      font-size: 24px;
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-1deg); }
+      50% { transform: rotate(1deg); }
     }
   </style>
 </head>
 <body>
-  <h1>🔮 Yearlyzer</h1>
-  <p>The Pointless Year Predictor</p>
-
-  <input type="number" id="yearInput" placeholder="Enter current year" />
-  <button onclick="predictNextYear()">Predict Next Year</button>
-
-  <div id="result"></div>
+  <div class="container">
+    <h1>🔮 Welcome to yearPredictorIO 🔮</h1>
+    <p>Enter the current year. We’ll do the impossible.</p>
+    <input type="number" id="yearInput" placeholder="e.g., 2025" />
+    <br />
+    <button onclick="predict()">Summon the Knowledge</button>
+    <div id="result"></div>
+  </div>
 
   <script>
-    function predictNextYear() {
+    function predict() {
       const input = document.getElementById("yearInput").value;
-      const result = document.getElementById("result");
-
+      const resultDiv = document.getElementById("result");
       if (!input || isNaN(input)) {
-        result.innerText = "Please enter a valid year 🙄";
-        return;
-      }
-
-      const nextYear = parseInt(input) + 1;
-      result.innerText = `🤯 OMG! The next year is... ${nextYear}!`;
-    }
-  </script>
-</body>
-</html>
+        resultDiv.innerHTML = "👽 ERROR: Did you just type a potato?";
