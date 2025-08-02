@@ -1,15 +1,22 @@
-# yearPredictorIO 👁️‍🗨️
+# yearPredictorIO 🧠💻
 
-This is the most *brainrotted* futuristic year prediction tool powered by forbidden Matrix code.
+A chaotic, Matrix-themed joke site that predicts what the next year will bring.  
+Just enter the current year, hit predict, and receive absurd prophecies generated from pure unfiltered brainrot.
 
-## 🔮 Features
-- Summons the next year.
-- Sarcastic Matrix-style humor.
-- Cool hacker background.
-- Works without AI. Yes, even your fridge could run this.
+## Features
+- Hacker-core Matrix code background
+- AI-generated absurdity
+- No actual logic, just vibes
 
-## 🚀 How to Run
+## Preview
+![screenshot](./assets/screenshot.png)
 
-1. Clone the repo:
-```bash
-git clone https://github.com/nikhilsreekumar722-cloud/yearPredictorIO.git
+## How to Use
+1. Enter current year
+2. Click “Predict”
+3. Receive nonsense
+
+---
+
+💀 Built with HTML, CSS, and JavaScript  
+🧠 Made for fun. Use irresponsibly.
