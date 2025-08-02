@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: #00ff00;
+}
+
+body {
+  background-image: url('./assets/matrix-bg.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 2rem;
+  border-radius: 10px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+}
+
+input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  background-color: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  width: 80%;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: #00ff00;
+  border: 2px solid #00ff00;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #003300;
+}
+
+#result {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
