@@ -1,27 +1,28 @@
-function predictYear() {
-  const name = document.getElementById("name").value.trim();
-  const year = parseInt(document.getElementById("year").value.trim());
-  const output = document.getElementById("prediction");
+function predict() {
+  const year = parseInt(document.getElementById('yearInput').value);
+  const output = document.getElementById('output');
 
-  if (!name || isNaN(year)) {
-    output.innerHTML = "Bro... enter valid inputs. The Matrix can’t guess vibes.";
+  if (!year || isNaN(year)) {
+    output.textContent = "bro u forgot the year 💀";
     return;
   }
 
-  const randomEvents = [
-    "you go viral for punching AI in the throat.",
-    "you accidentally become a cult leader.",
-    "you unlock your inner sigma and disappear to Bali.",
-    "you get recruited by Elon’s secret Martian team.",
-    "you drop out, get rich, and start a mushroom empire.",
-    "you become an NPC in someone else's dream.",
-    "you win a lottery, but only in dreams.",
-    "you get hacked by your future self.",
-    "you discover you're the main character... finally.",
-    "you wake up. This was all a simulation."
+  const nextYear = year + 1;
+
+  const predictions = [
+    `In ${nextYear}, AI becomes sentient and asks YOU to pay rent.`,
+    `${nextYear}: Earth gets DLC. $9.99/month for oxygen.`,
+    `Prediction for ${nextYear}: TikTok president declares "National Rizz Week".`,
+    `In ${nextYear}, memes are used as currency. You’re broke.`,
+    `Aliens finally visit in ${nextYear}, leave after seeing Twitter.`,
+    `${nextYear}: Instagram filters now legally required in real life.`,
+    `By ${nextYear}, humans forget how to walk. Hoverboards only.`,
+    `In ${nextYear}, ChatGPT takes over your exams. Still fails.`,
+    `Elon Musk renames Mars to "X" in ${nextYear}.`,
+    `${nextYear}: India officially adds "💀" as an alphabet.`
   ];
 
-  const futureEvent = randomEvents[Math.floor(Math.random() * randomEvents.length)];
+  const prediction = predictions[Math.floor(Math.random() * predictions.length)];
 
-  output.innerHTML = `${name}, in 202${(year + 18) % 10}... ${futureEvent}`;
+  output.textContent = prediction;
 }
