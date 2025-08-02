@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Matrix Hacker</title>
+  <title>yearPredictorIO</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="overlay">
-    <h1 class="title">MATRIX HACKER</h1>
-    <button id="summonBtn">Summon the Knowledge</button>
-    <p id="quoteDisplay"></p>
+  <div class="matrix-bg"></div>
+
+  <div class="container">
+    <h1 class="glitch">yearPredictorIO</h1>
+    <p class="sub">Hack into the simulation & reveal your upcoming year...</p>
+    <input type="text" id="name" placeholder="Enter your name (or alias)">
+    <input type="number" id="year" placeholder="Enter your birth year">
+    <button onclick="predictYear()">Predict My Year</button>
+    <div id="prediction"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
