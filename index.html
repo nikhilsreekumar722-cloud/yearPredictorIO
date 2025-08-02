@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>yearPredictorIO</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">yearPredictor<span>.IO</span></h1>
-    <p class="tagline">Enter current year. Receive unhinged prophecy.</p>
-    <input type="number" id="yearInput" placeholder="Enter current year" />
-    <button onclick="predict()">Predict Next Year</button>
-    <p id="output"></p>
+  <div class="overlay">
+    <h1>yearPredictorIO</h1>
+    <p>Enter current year to reveal the cursed next one</p>
+    <input type="number" id="yearInput" placeholder="Enter current year">
+    <button onclick="predictYear()">Predict</button>
+    <p id="prediction" class="result"></p>
   </div>
   <script src="script.js"></script>
 </body>
