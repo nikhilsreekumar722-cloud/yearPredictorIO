@@ -2,66 +2,62 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Courier New', monospace;
-  overflow: hidden;
-  color: #00ff9f;
-  background-color: black;
-}
-
-.matrix-bg {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
+  background: black url('./assets/matrix-bg.gif') center center / cover no-repeat fixed;
+  color: #00ff00;
+  text-align: center;
   height: 100vh;
-  z-index: -1;
-  background: url('./assets/matrix-bg.gif') center center / cover no-repeat;
-  opacity: 0.2;
-  filter: brightness(0.8) contrast(1.2);
+  overflow: hidden;
 }
 
 .container {
-  position: relative;
-  top: 20vh;
-  width: 90%;
-  max-width: 500px;
-  margin: auto;
-  background: rgba(0,0,0,0.6);
-  padding: 2rem;
-  border: 2px solid #00ff9f;
+  margin-top: 20vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 20px #00ff9f88;
+  display: inline-block;
 }
 
-.glitch {
-  font-size: 2rem;
-  text-shadow: 0 0 5px #00ff9f, 0 0 10px #00ff9f;
+.title {
+  font-size: 3em;
+  text-shadow: 0 0 10px #0f0;
 }
 
-.sub {
+.title span {
+  color: #0ff;
+}
+
+.tagline {
+  font-style: italic;
   margin-bottom: 20px;
-  font-size: 1rem;
-  color: #00ffaa;
+  color: #0f0;
 }
 
-input, button {
-  margin: 10px 0;
+input {
   padding: 10px;
-  width: 80%;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: none;
+  font-size: 1.2em;
+  background: black;
+  border: 1px solid #0f0;
+  color: #0f0;
 }
 
 button {
-  background-color: #00ff9f;
-  color: black;
-  font-weight: bold;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: transparent;
+  color: #0f0;
+  border: 2px solid #0f0;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#prediction {
+button:hover {
+  background-color: #003300;
+}
+
+#output {
   margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-shadow: 0 0 5px #00ff9f;
+  font-size: 1.5em;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff;
 }
