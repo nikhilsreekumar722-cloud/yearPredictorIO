@@ -2,57 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Courier New', monospace;
   color: #00ff00;
+  background: black;
+  overflow: hidden;
 }
 
 body {
-  background-image: url('./assets/matrix-bg.gif');
+  background-image: url('assets/matrix.gif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.container {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 2rem;
-  border-radius: 10px;
-  border: 2px solid #00ff00;
-  box-shadow: 0 0 20px #00ff00;
+  padding: 20px;
 }
 
-input {
-  margin-top: 1rem;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  background-color: black;
-  border: 1px solid #00ff00;
+.title {
+  font-size: 3rem;
+  margin-bottom: 30px;
   color: #00ff00;
-  width: 80%;
+  text-shadow: 0 0 10px #00ff00;
 }
 
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  background-color: black;
+#summonBtn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #000;
   color: #00ff00;
   border: 2px solid #00ff00;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #003300;
+#summonBtn:hover {
+  background-color: #00ff00;
+  color: #000;
 }
 
-#result {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
-  word-wrap: break-word;
+#quoteDisplay {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  max-width: 600px;
+  text-shadow: 0 0 5px #00ff00;
 }
