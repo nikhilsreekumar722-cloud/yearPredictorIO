@@ -1,47 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>yearPredictorIO 🤯</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>brainrot.exe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">🧠 yearPredictorIO</h1>
-    <img src="assets/brain.png" alt="Brainrot Mode" class="brain-img"/>
+  <div class="overlay"></div>
 
-    <p class="description">Enter your current year, and I will summon the giga knowledge to show you what's next 📈😵‍💫</p>
-
-    <input
-      type="number"
-      id="yearInput"
-      placeholder="Type a year bruh..."
-      class="input-field"
-    />
-
-    <button onclick="predictYear()" class="summon-btn">🧙‍♂️ Summon the Knowledge</button>
-
-    <div id="result" class="result"></div>
-
-    <footer>
-      <p>Made with 😵 by nikhilsreekumar722</p>
-    </footer>
+  <div class="terminal">
+    <h1>brainrot.exe [Matrix v3.33]</h1>
+    <div class="input-group">
+      <input type="text" id="command" placeholder="~$ enter command..." autocomplete="off" />
+      <button onclick="runCommand()">run</button>
+    </div>
+    <div id="output"></div>
   </div>
 
-  <script>
-    function predictYear() {
-      const yearInput = document.getElementById("yearInput").value;
-      const resultDiv = document.getElementById("result");
-
-      if (!yearInput) {
-        resultDiv.innerHTML = "<p class='error'>Bro type a year first 💀</p>";
-        return;
-      }
-
-      const nextYear = parseInt(yearInput) + 1;
-      resultDiv.innerHTML = `<p class="answer">📅 Next year is <strong>${nextYear}</strong>. Go touch grass in ${nextYear} 🌱</p>`;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
