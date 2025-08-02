@@ -1,19 +1,18 @@
-# 🔮 yearPredictorIO
+# yearPredictorIO 🧠
 
-A revolutionary project that asks the brave question:  
-**"What comes after this year?"**
+A revolutionary tool powered by dark matter and three brain cells.  
+Enter the current year. It tells you... the **next** one. Groundbreaking. 🙃
 
-## 🧠 How It Works
-- You enter the current year (e.g., 2025)
-- It reveals the next year (e.g., 2026)
-- That’s literally it.
+## Features:
+- Predicts next year with 100% accuracy*
+- Uses no AI. Just vibes.
+- Built using Comic Sans and chaos.
 
-## 🚀 Live Preview
-👉 [Click here to see the future](https://nikhilsreekumar722.github.io/yearPredictorIO/)
+> *Disclaimer: Results may vary if you live in a black hole.
 
-## 😎 Why This Exists
-Because not all heroes build useful apps.  
-Some just waste your time with style.
+## How to run:
+Just open `index.html` in your browser. If it explodes, that's a feature.
 
-## 👨‍💻 Built by
-Nikhil Sreekumar
+---
+
+😵‍💫 Built for the Useless Project.
