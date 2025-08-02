@@ -3,62 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>yearPredictorIO</title>
-  <style>
-    body {
-      background: url("https://media.tenor.com/7Wwgdjfv1iEAAAAC/cosmos-space.gif") no-repeat center center fixed;
-      background-size: cover;
-      font-family: "Comic Sans MS", cursive, sans-serif;
-      color: #ffffff;
-      text-align: center;
-      margin-top: 10%;
-    }
-    .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 20px;
-      display: inline-block;
-      animation: wiggle 2s infinite ease-in-out;
-    }
-    input {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    button {
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #ff69b4;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    #result {
-      margin-top: 20px;
-      font-size: 24px;
-    }
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(-1deg); }
-      50% { transform: rotate(1deg); }
-    }
-  </style>
+  <title>yearPredictorIO 🤯</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🔮 Welcome to yearPredictorIO 🔮</h1>
-    <p>Enter the current year. We’ll do the impossible.</p>
-    <input type="number" id="yearInput" placeholder="e.g., 2025" />
-    <br />
-    <button onclick="predict()">Summon the Knowledge</button>
-    <div id="result"></div>
+    <h1 class="title">🧠 yearPredictorIO</h1>
+    <img src="assets/brain.png" alt="Brainrot Mode" class="brain-img"/>
+
+    <p class="description">Enter your current year, and I will summon the giga knowledge to show you what's next 📈😵‍💫</p>
+
+    <input
+      type="number"
+      id="yearInput"
+      placeholder="Type a year bruh..."
+      class="input-field"
+    />
+
+    <button onclick="predictYear()" class="summon-btn">🧙‍♂️ Summon the Knowledge</button>
+
+    <div id="result" class="result"></div>
+
+    <footer>
+      <p>Made with 😵 by nikhilsreekumar722</p>
+    </footer>
   </div>
 
   <script>
-    function predict() {
-      const input = document.getElementById("yearInput").value;
+    function predictYear() {
+      const yearInput = document.getElementById("yearInput").value;
       const resultDiv = document.getElementById("result");
-      if (!input || isNaN(input)) {
-        resultDiv.innerHTML = "👽 ERROR: Did you just type a potato?";
+
+      if (!yearInput) {
+        resultDiv.innerHTML = "<p class='error'>Bro type a year first 💀</p>";
+        return;
+      }
+
+      const nextYear = parseInt(yearInput) + 1;
+      resultDiv.innerHTML = `<p class="answer">📅 Next year is <strong>${nextYear}</strong>. Go touch grass in ${nextYear} 🌱</p>`;
+    }
+  </script>
+</body>
+</html>
