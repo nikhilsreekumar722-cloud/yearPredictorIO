@@ -1,0 +1,34 @@
+function predictYear() {
+  const input = document.getElementById('yearInput').value;
+  const output = document.getElementById('output');
+  const quoteArea = document.getElementById('quoteArea');
+
+  if (!input || isNaN(input)) {
+    output.innerText = "Please enter a valid year.";
+    quoteArea.innerText = "";
+    return;
+  }
+
+  output.innerText = "Calculating...";
+  quoteArea.innerText = "";
+
+  setTimeout(() => {
+    const nextYear = parseInt(input) + 1;
+    output.innerText = `The next year is ${nextYear}`;
+    quoteArea.innerText = getRandomQuote();
+  }, 1800);
+}
+
+function getRandomQuote() {
+  const quotes = [
+    "404: hope not found.",
+    "New year, same existential dread.",
+    "Congratulations, you're one step closer to the heat death of the universe.",
+    "Another year of pretending we know what we're doing.",
+    "It's just a simulation, but okay.",
+    "Matrix reloaded. Bugs still unfixed.",
+    "At this point, time is just a corporate illusion.",
+    "Remember: your alarm will still ring at 7 AM."
+  ];
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
