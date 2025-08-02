@@ -4,7 +4,7 @@ A Matrix-themed website that *predicts the next year*—not because it's useful,
 
 > "Same circus, new clowns incoming..."
 
-![screenshot](assets/matrix.gif)
+![screenshot](assets/ss.jpg)
 
 ## 🌀 Features
 - Input the current year → Get the next year (wow)
