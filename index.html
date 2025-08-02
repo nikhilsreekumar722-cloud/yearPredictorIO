@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yearlyzer: The Pointless Year Predictor</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #1e1e1e;
+      color: #00ffcc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    input {
+      width: 200px;
+    }
+    button {
+      background-color: #00ffcc;
+      color: #000;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 2em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔮 Yearlyzer</h1>
+  <p>The Pointless Year Predictor</p>
+
+  <input type="number" id="yearInput" placeholder="Enter current year" />
+  <button onclick="predictNextYear()">Predict Next Year</button>
+
+  <div id="result"></div>
+
+  <script>
+    function predictNextYear() {
+      const input = document.getElementById("yearInput").value;
+      const result = document.getElementById("result");
+
+      if (!input || isNaN(input)) {
+        result.innerText = "Please enter a valid year 🙄";
+        return;
+      }
+
+      const nextYear = parseInt(input) + 1;
+      result.innerText = `🤯 OMG! The next year is... ${nextYear}!`;
+    }
+  </script>
+</body>
+</html>
