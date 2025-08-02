@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Share Tech Mono', monospace;
-    background-image: url('https://i.gifer.com/origin/f4/f4e0a9f4b651ca95a11ec9484d84c2d5_w200.gif');
+    background-image: url('./assets/matrix-bg.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
