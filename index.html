@@ -16,16 +16,6 @@
   </div>
 
   <script src="script.js"></script>
-  <audio id="bg-audio" src="./assets/hidden.mp3" autoplay loop></audio>
-<script>
-  // Attempt to auto-play after user interaction (for autoplay restrictions)
-  document.body.addEventListener('click', () => {
-    const audio = document.getElementById('bg-audio');
-    if (audio.paused) {
-      audio.play().catch(() => {});
-    }
-  });
-</script>
   <div id="hiddenTrigger" class="glitchy-text">🕳️ Tap here for a hidden message</div>
 
 <audio id="bg-audio" src="./assets/hidden-message.mp3"></audio>
