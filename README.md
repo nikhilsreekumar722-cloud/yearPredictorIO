@@ -1,15 +1,8 @@
+
 # yearPredictorIO
 
 A Matrix-themed satirical web app that "predicts" the next year when you input the current year. Built with HTML, CSS, and JavaScript — infused with Gen-Z brainrot, dark humor, and a glitchy simulation vibe.
 
-![Mobile Preview](./assets/ss.jpg)
-
----
-# yearPredictorIO
-
-A Matrix-themed satirical web app that "predicts" the next year when you input the current year. Built with HTML, CSS, and JavaScript — infused with Gen-Z brainrot, dark humor, and a glitchy simulation vibe.
-
-![Mobile Preview](./assets/ss.jpg)
 
 ---
 
