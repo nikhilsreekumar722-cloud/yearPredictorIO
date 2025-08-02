@@ -1,1 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('../assets/brainrot.gif'); /* matrix GIF */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 20px #00ffcc;
+    animation: wiggle 2s infinite ease-in-out;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #ff66c4;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    background-color: #ff00aa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc0088;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #00ffcc;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+}
 
